@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Creating list using li in JS </h1>
+  <script>
+    function createList(){
+    let ol=document.createElement('ol')
+    let li1=document.createElement('li')
+    li1.textContent='Apple'
+    let li2=document.createElement('li')
+    li2.textContent='oppo'
+    let li3=document.createElement('li')
+    li3.textContent='samsung'
+    let li4=document.createElement('li')
+    li4.textContent='jio'
+    let li5=document.createElement('li')
+    li5.textContent='moto'
+
+    ol.appendChild(li1)
+    ol.appendChild(li2)   
+    ol.appendChild(li3)
+    ol.appendChild(li4) 
+    ol.appendChild(li5)
+
+    document.body.appendChild(ol)
+
+  
+    }
+    createList();
+    createList();
+    createList(); 
+    createList();
+
+
+
+  </script>
+</body>
+</html>
