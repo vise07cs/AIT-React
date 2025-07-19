@@ -80,6 +80,9 @@ The above structure is ver very complex
 
 This is where JSX came into picture .
 JSX= JS +XML   (95% similar to HTML )
+==================================================================
+Now we dont need to use React.CreateElement ever
+
 
 let h2=<h2>----</h2>
 

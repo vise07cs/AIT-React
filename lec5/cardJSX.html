@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script src="https://unpkg.com/react@18/umd/react.development.js" ></script>
+  <script  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <link rel="stylesheet" href="card.css">
+
+</head>
+<body>
+  <div id ="root">
+
+     <script type="text/babel">
+        let imgURL="https://st1.bollywoodlife.com/wp-content/uploads/2024/06/Akshay-Kumar.jpg"
+        let cardJSX = (
+          <div className="card">
+            <div className="img">
+              <img src={imgURL} alt="Random Image" width='80%' />
+
+            </div>
+
+            <div className="name">
+              <h4>Akshay Kumar </h4>
+              <p>Hi I am Khiladi , The best action hero in bollywood</p>
+            </div>
+
+            <div className="button">
+              <button>Click Me</button>
+            </div>
+
+
+
+          </div>
+
+        );
+        let cardJSX2 = (
+          <div className="card-container"> 
+            {cardJSX}
+            {cardJSX}
+            {cardJSX}  
+            
+            </div>
+         
+        );
+ 
+
+
+
+      ReactDOM.render(cardJSX2, document.getElementById("root"))
+
+     </script> 
+
+  </div>
+  
+</body>
+</html>
