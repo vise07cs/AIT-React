@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="tc.css">
+   <script src="https://unpkg.com/react@18/umd/react.development.js" ></script>
+  <script  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+  <div id ="root">
+
+     <script type="text/babel">
+
+      let title1="React"
+      let title2="NodeJS"
+      let title3="MongoDB" 
+
+      let para1='React is a JavaScript library for building user interfaces.'
+      let para2='Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine.'
+      let para3='MongoDB is a NoSQL database that uses a document-oriented data model.'
+
+      let button1="Learn React"
+      let button2="Learn NodeJS"
+      let button3="Learn MongoDB"
+
+
+      function MyContainer(title,paragraph,buttonTitle){
+        return (
+          <div className="container">
+
+            <h1>{title}</h1>
+            <p>{paragraph}</p>
+            <button>{buttonTitle}</button>
+            
+            
+            </div>
+
+        )
+      }
+      function MultipleContainers(){
+        return (
+          <div className="containers">
+        <MyContainer title={title1} paragraph={para1} buttonTitle={button1}/>
+        <MyContainer title={title2} paragraph={para2} buttonTitle={button2}/>
+        <MyContainer title={title3} paragraph={para3} buttonTitle={button3 }/>
+          </div> 
+        )
+      }
+
+      ReactDOM.render(<MultipleContainers/>, document.getElementById("root"));
+      
+      
+
+
+     </script>
+
+  </div>
+  
+</body>
+</html>

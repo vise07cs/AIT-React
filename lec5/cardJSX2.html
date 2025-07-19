@@ -27,8 +27,7 @@
         let p4="Hi I am Aamir Khan, The perfectionist of bollywood";
 
       function createCard(name, image ,paragraph) {
-    
-
+  
         return <div className="card">
           <div className="img">
             <img src={image} alt="Random Image" width='80%' />
@@ -44,8 +43,6 @@
             <button>Click Me</button>
           </div>
 
-
-
         </div>
   
       }
@@ -57,20 +54,13 @@
             {createCard("Shah Rukh Khan", imgURL3, p3)} 
             {createCard("Aamir Khan",imgURL4, p4)}
             
-    
-            </div>
+          </div>
 
         )
 
       }
 
-
-
-
       ReactDOM.render(multipleCards(),document.getElementById("root"))
-    
- 
-
      </script> 
 
   </div>
