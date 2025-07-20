@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="page.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+  <div id="root">
+
+    <script type="text/babel">
+        let imgURL1="https://st1.bollywoodlife.com/wp-content/uploads/2024/06/Akshay-Kumar.jpg"
+        let imgURL2="https://static.toiimg.com/thumb/msid-122593822,imgsize-18208,width-400,resizemode-4/122593822.jpg"
+        let imgURL3="https://www.insideboxoffice.com/wp-content/uploads/2024/08/Srk.jpg"
+        let imgURL4="https://preview.redd.it/for-me-amir-khan-is-one-of-the-most-versatile-actor-in-v0-g8se27fn5ymc1.png?width=640&crop=smart&auto=webp&s=f8b0511a29e5a163444abb709310fc5277c83900"
+
+
+        let p1="Hi I am Khiladi, The best action hero in bollywood";
+        let p2="Hi I am Tiger , Radhe Radhe"
+        let p3="Hi I am King Khan, The best romantic hero in bollywood";
+        let p4="Hi I am Aamir Khan, The perfectionist of bollywood";
+
+      function CreateCard(props) {
+  
+        return <div className="card">
+          <div className="img">
+            <img src={props.image} alt="Random Image" width='80%' />
+
+          </div>
+
+          <div className="name">
+            <h4>{props.name} </h4>
+            <p>{props.paragraph}</p>
+          </div>
+
+          <div className="button">
+            <button>Click Me</button>
+          </div>
+
+        </div>
+  
+      }
+
+      function Header() {
+        return (
+          <div className="flexContainer header">
+            <h2>Header Component rendered</h2>
+          </div>
+        )
+
+      }
+
+      function Main() {
+        return (
+          <div className="flexContainer main">
+           <CreateCard name="Akshay" image={imgURL1} paragraph={p1}/>
+            <CreateCard name="Salman" image={imgURL2} paragraph={p2}/>
+            <CreateCard name="Shahrukh" image={imgURL3} paragraph={p3}/>
+            <CreateCard name="Aamir" image={imgURL4} paragraph={p4}/>
+          </div>
+        )
+
+      }
+
+
+      function Footer() {
+        return (
+          <div className="flexContainer footer">
+            <h2>Footer component rendered</h2>
+          </div>
+        )
+
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        )
+      }
+
+      ReactDOM.render(
+        <App />, document.getElementById("root")
+
+      )
+
+
+
+    </script>
+
+  </div>
+
+</body>
+
+</html>
