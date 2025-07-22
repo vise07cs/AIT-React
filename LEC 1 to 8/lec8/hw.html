@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script src="https://unpkg.com/react@18/umd/react.development.js" ></script>
+  <script  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="hw.css">
+
+</head>
+<body>
+  <div id ="root">
+
+     <script type="text/babel">
+      function Card(){
+        return(
+        <div className="content">
+
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" className="image" width="25%" height="70%"/>
+
+          <div className="info">
+            <h2>John Sinha</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente quo praesentium, temporibus numquam qui ipsam fugit soluta quasi animi officiis deserunt accusantium modi assumenda fugiat vero recusandae dignissimos nostrum blanditiis! Expedita laudantium commodi voluptas fugiat rerum. Odio facilis non expedita veritatis placeat illum, sit, est aperiam praesentium, vero corporis velit nam minus omnis fugit maiores nesciunt blanditiis quam. Cum, saepe! Ratione possimus deserunt impedit hic beatae, voluptas blanditiis laudantium corporis perferendis vitae quo ad cumque quibusdam nesciunt repellat nulla! Amet aspernatur hic possimus voluptas repudiandae obcaecati voluptatem modi impedit, animi laborum rerum eveniet non! Quo, perspiciatis. Sint totam alias, eos officiis culpa ex possimus labore, perferendis neque eligendi quam nulla eum quae maxime enim consectetur cupiditate repellat iste, quia natus delectus libero nobis officia. Quam incidunt minus atque quaerat sunt repudiandae perferendis. Optio id ad recusandae eum mollitia minima natus iste, inventore autem harum. Vero dicta ducimus rerum neque.</p>
+
+            <p><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dicta optio distinctio consectetur quia natus doloribus ipsa? Reiciendis, distinctio ut!</strong></p>
+            </div>
+          
+          </div>
+          
+
+        )
+      }
+
+      ReactDOM.render(<Card/>,document.getElementById("root"))
+    
+      
+
+
+     </script>
+
+  </div>
+  
+</body>
+</html>

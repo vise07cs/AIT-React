@@ -1,0 +1,18 @@
+.image{
+  padding-left: 50px;
+  padding-top: 120px;
+}
+
+.content{
+  display: flex;
+}
+
+.info{
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-right: 180px;
+}
+.info h2{
+  font-size: 40px;
+
+}
